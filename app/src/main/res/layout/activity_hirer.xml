@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+   >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/post_task_toolbar"
+        >
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Task_title"
+                        android:padding="7dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:layout_marginTop="30dp"
+                        android:maxLength="15"
+                        android:id="@+id/task_title">
+
+                    </EditText>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:padding="7dp"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="50"
+                        android:id="@+id/task_description"
+                        android:autofillHints="no"
+                        android:inputType="textLongMessage">
+
+                    </EditText>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_budget"
+                        android:padding="7dp"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:id="@+id/task_budget"
+                        android:autofillHints="no">
+
+                    </EditText>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_type"
+                        android:padding="7dp"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/Physical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Physical" />
+
+                    <RadioButton
+                        android:id="@+id/online"
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"
+
+                        android:text="Online" />
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textColor="@android:color/black"
+                        android:padding="7dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:hint="e.g IT Services"
+                        android:completionThreshold="1"
+                        android:completionHint="e.g IT Services"
+                        android:id="@+id/task_category"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textColor="@android:color/black"
+                        android:padding="7dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:id="@+id/location">
+
+                    </EditText>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Post"
+                android:textColor="@android:color/black"
+                android:background="@color/colorWhite"
+                android:id="@+id/task_post_btn">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

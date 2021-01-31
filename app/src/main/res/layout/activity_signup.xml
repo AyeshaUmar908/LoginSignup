@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonscreen"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.example.loginsignup.signup">
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/fulNameRegisterET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+
+            android:inputType="textPersonName"
+            android:hint="Full Name"/>
+
+        <EditText
+            android:id="@+id/emailRegisterET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/telephoneRegisterET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+
+            android:inputType="number"
+            android:hint="Telephone"/>
+
+        <EditText
+            android:id="@+id/passwordRegisterET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+             android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/confPasswordRegisterET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="15dp"
+             android:inputType="textPassword"
+            android:hint="Confirm Password"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/registerBTN"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:background="@android:color/white"
+            android:text="REGISTER"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/linktologinBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:text="Already a member?Login from here" />
+    </LinearLayout>
+
+</LinearLayout>
